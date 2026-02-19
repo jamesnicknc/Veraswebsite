@@ -1,0 +1,152 @@
+/* =========================
+   Veras Technologies Design System
+========================= */
+
+:root {
+  --deep-navy: #0B1F3A;
+  --command-blue: #1B4F8A;
+  --light-blue: #2E7DD1;
+  --sky-blue: #5BA3E8;
+  --steel: #8A9BB0;
+  --frost: #EEF3F9;
+  --cloud: #F7FAFD;
+  --white: #FFFFFF;
+  --primary-text: #1A1A2E;
+  --muted-text: #555C6E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cloud);
+  color: var(--primary-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 48px;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.card {
+  background: var(--white);
+  padding: 28px;
+  border-radius: 8px;
+  border: 1px solid #DDE5EF;
+  box-shadow: 0 2px 8px rgba(11, 31, 58, 0.08);
+}
+
+.btn-primary {
+  background: var(--light-blue);
+  color: var(--white);
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: var(--sky-blue);
+  transform: scale(1.02);
+}
+
+.btn-secondary {
+  background: var(--frost);
+  color: var(--command-blue);
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--command-blue);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+/* Navigation */
+.navbar {
+  background: var(--deep-navy);
+  padding: 20px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+}
+
+.logo {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: var(--white);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--deep-navy), var(--command-blue));
+  color: var(--white);
+  padding: 120px 48px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+/* Grid */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* Footer */
+footer {
+  background: var(--deep-navy);
+  color: var(--white);
+  padding: 48px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .container {
+    padding: 48px 24px;
+  }
+}
