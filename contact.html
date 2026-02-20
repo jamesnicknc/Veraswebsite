@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Veras Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect with Veras Technologies to learn how our AI-powered public safety solutions can support your agency or organization.">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 48" width="32" height="36" aria-hidden="true">
+      <defs>
+        <linearGradient id="navG1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#5BA3E8"/>
+          <stop offset="100%" stop-color="#1B4F8A"/>
+        </linearGradient>
+      </defs>
+      <path d="M22 2 L40 8 L40 27 Q40 42 22 48 Q4 42 4 27 L4 8 Z" fill="none" stroke="#5BA3E8" stroke-width="1.2" opacity="0.35"/>
+      <polygon points="7,8 15,8 24,38 18,38" fill="url(#navG1)"/>
+      <polygon points="29,8 37,8 31,38 25,38" fill="#2E7DD1" opacity="0.65"/>
+      <polygon points="25,38 24,38 22,28 22,28" fill="#5BA3E8" opacity="0.45"/>
+    </svg>
+    <div class="navbar-wordmark">
+      <span class="wordmark-name">VERAS</span>
+      <span class="wordmark-sub">TECHNOLOGIES</span>
+    </div>
+  </a>
+  <div class="navbar-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active nav-cta">Contact Us</a>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div style="font-size:11px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:var(--sky-blue); margin-bottom:14px;">Get in Touch</div>
+  <h1>Let's Talk.</h1>
+  <p>Connect with our team to learn how Veras Technologies can support your agency or organization.</p>
+</section>
+
+<!-- ── MAIN CONTENT ── -->
+<div class="container">
+
+  <!-- Contact Info Cards -->
+  <section class="section">
+    <div class="section-label">01 &nbsp;/&nbsp; Reach Us</div>
+    <h2>How to Connect</h2>
+    <div class="section-rule"></div>
+    <div class="contact-info-grid">
+      <div class="contact-info-card">
+        <div class="ci-label">Email</div>
+        <p><a href="mailto:info@verastechnologies.com" style="color:var(--signal-blue); font-weight:500;">info@verastechnologies.com</a></p>
+      </div>
+      <div class="contact-info-card">
+        <div class="ci-label">Company</div>
+        <p>Veras Technologies LLC<br>United States</p>
+      </div>
+      <div class="contact-info-card">
+        <div class="ci-label">Services</div>
+        <p>Government &amp; Public Safety<br>AI-Powered Solutions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section">
+    <div class="section-label">02 &nbsp;/&nbsp; Send a Message</div>
+    <h2>Get in Touch</h2>
+    <div class="section-rule"></div>
+    <div class="grid-2" style="align-items:start; gap:56px;">
+
+      <!-- Form -->
+      <div class="card" style="padding:40px 36px;">
+        <form action="#" method="POST" novalidate>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name <span style="color:var(--signal-blue);">*</span></label>
+              <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name <span style="color:var(--signal-blue);">*</span></label>
+              <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address <span style="color:var(--signal-blue);">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="jane.smith@agency.gov" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="organization">Organization / Agency</label>
+            <input class="form-input" type="text" id="organization" name="organization" placeholder="Department of Public Safety">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inquiry">Area of Interest</label>
+            <select class="form-select" id="inquiry" name="inquiry">
+              <option value="" disabled selected>Select an option…</option>
+              <option value="geospatial-intelligence">Geospatial Intelligence</option>
+              <option value="vehicle-recognition">Vehicle Recognition Platform</option>
+              <option value="veras-ai">Veras AI</option>
+              <option value="general">General Inquiry</option>
+              <option value="partnership">Partnership Opportunities</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message <span style="color:var(--signal-blue);">*</span></label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your agency's needs or how we can help your community…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%; padding:15px; font-size:15px;">Send Message</button>
+
+        </form>
+      </div>
+
+      <!-- Right Side Info -->
+      <div style="display:flex; flex-direction:column; gap:24px;">
+        <div style="background:var(--deep-navy); border-radius:12px; padding:36px 32px; position:relative; overflow:hidden;">
+          <div style="position:absolute; top:-40px; right:-40px; width:140px; height:140px; border-radius:50%; border:1px solid rgba(91,163,232,0.10);"></div>
+          <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--sky-blue); font-weight:600; margin-bottom:16px;">Our Promise</div>
+          <p style="font-family:'DM Serif Display',serif; font-size:20px; color:white; line-height:1.45; margin-bottom:14px;">
+            Authoritative without being cold. Precise and specific in every response.
+          </p>
+          <p style="font-size:13px; color:rgba(255,255,255,0.50); line-height:1.75;">
+            We respond to every inquiry with the same precision and care we bring to our products. Expect a direct, substantive response — no sales fluff.
+          </p>
+          <div style="margin-top:22px; width:36px; height:2px; background:var(--signal-blue); border-radius:1px;"></div>
+        </div>
+
+        <div class="card" style="padding:28px;">
+          <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; font-weight:600; color:var(--signal-blue); margin-bottom:12px;">Who We Work With</div>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--muted-text);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--signal-blue); flex-shrink:0;"></div>
+              Government agencies and planning departments
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--muted-text);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--signal-blue); flex-shrink:0;"></div>
+              Law enforcement and public safety organizations
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--muted-text);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--signal-blue); flex-shrink:0;"></div>
+              Civic leaders and municipal organizations
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:var(--muted-text);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--signal-blue); flex-shrink:0;"></div>
+              Technology partners in the public safety space
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:28px; background:var(--frost);">
+          <div style="font-size:11px; letter-spacing:3px; text-transform:uppercase; font-weight:600; color:var(--signal-blue); margin-bottom:10px;">Projects</div>
+          <p style="font-size:14px; color:var(--muted-text); line-height:1.75;">
+            Interested in a specific solution? <a href="projects.html" style="color:var(--signal-blue); font-weight:600;">Explore our full product suite →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 48" width="26" height="30" aria-hidden="true">
+          <defs>
+            <linearGradient id="ftG3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#5BA3E8"/>
+              <stop offset="100%" stop-color="#1B4F8A"/>
+            </linearGradient>
+          </defs>
+          <path d="M22 2 L40 8 L40 27 Q40 42 22 48 Q4 42 4 27 L4 8 Z" fill="none" stroke="#5BA3E8" stroke-width="1.2" opacity="0.35"/>
+          <polygon points="7,8 15,8 24,38 18,38" fill="url(#ftG3)"/>
+          <polygon points="29,8 37,8 31,38 25,38" fill="#2E7DD1" opacity="0.65"/>
+          <polygon points="25,38 24,38 22,28 22,28" fill="#5BA3E8" opacity="0.45"/>
+        </svg>
+        <div>
+          <div style="font-family:'Trebuchet MS',sans-serif; font-size:15px; font-weight:700; letter-spacing:3px; color:white;">VERAS</div>
+          <div style="font-family:'Trebuchet MS',sans-serif; font-size:7px; letter-spacing:3px; color:var(--sky-blue);">TECHNOLOGIES</div>
+        </div>
+      </div>
+      <p>AI-powered intelligent software built at the intersection of technology and public safety. Serving government agencies, civic organizations, and public safety professionals.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="projects.html">Our Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Projects</h4>
+      <ul>
+        <li><a href="projects.html">Geospatial Intelligence</a></li>
+        <li><a href="projects.html">Vehicle Recognition</a></li>
+        <li><a href="projects.html">Veras AI</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Veras Technologies LLC &nbsp;·&nbsp; www.VerasTechnologies.com</p>
+    <span class="footer-tagline">Intelligent Solutions for Safer Communities.</span>
+  </div>
+</footer>
+
+</body>
+</html>
